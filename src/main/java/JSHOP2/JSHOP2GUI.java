@@ -759,7 +759,7 @@ public class JSHOP2GUI extends JFrame {
         // remove it from 'leafNodes'.  
         // <Note:> I'm assuming that whenever you backtrack from a leaf node, that leaf node will
         // always have the highest tag value in 'leafNodes'.  I'm not certain if this is always the case.
-        else {
+        else if (!leafNodes.isEmpty()) {
         	Node treeNodeUserObj = (Node)treeNode.getUserObject();
         	Node leafNodeUserObj = (Node)leafNodes.get(leafNodes.size()-1).getUserObject();
         	

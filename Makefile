@@ -19,7 +19,7 @@ d: src/JSHOP2/*.java
 	cd examples/blocks; java JSHOP2.InternalDomain blocks
 	cd examples/blocks; java JSHOP2.InternalDomain -r problem
 	cd examples/blocks; javac gui.java
-	cd examples/blocks; java -Xss2048K -Xmx512M gui
+	cd examples/blocks; java -Xss4096K -Xmx1024M gui
 	cd examples/blocks; rm blocks.java; rm blocks.txt; rm problem.java; rm *.class
 
 2: bin.build/JSHOP2.jar
